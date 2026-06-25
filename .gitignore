@@ -3,4 +3,7 @@ dist
 *.tsbuildinfo
 .env
 .env.*
+.vercel
 *instruct*
+page.md
+deployment.md
