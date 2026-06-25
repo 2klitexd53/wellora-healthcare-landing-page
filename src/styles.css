@@ -73,6 +73,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  color: var(--ink);
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
@@ -80,10 +81,46 @@ main {
 }
 
 .logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--teal);
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+}
+
+.logo-mark svg {
+  width: 42px;
+  height: 42px;
+  display: block;
+  overflow: visible;
+}
+
+.logo-mark-bg {
+  fill: var(--teal);
+}
+
+.logo-leaf {
+  fill: var(--mint);
+}
+
+.logo-flow,
+.logo-cross {
+  fill: none;
+  stroke: var(--surface);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo-flow {
+  stroke-width: 3.25;
+}
+
+.logo-cross {
+  stroke-width: 2.75;
+}
+
+.logo-word {
+  display: inline-block;
 }
 
 .nav-links {
@@ -708,12 +745,11 @@ main {
   margin: 0 auto 26px;
 }
 
-.footer h2,
 .footer p {
   margin: 0;
 }
 
-.footer h2 {
+.footer .logo {
   color: var(--surface);
   font-size: 24px;
   font-weight: 800;

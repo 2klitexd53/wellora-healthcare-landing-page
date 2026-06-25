@@ -160,8 +160,15 @@ const faqs: Faq[] = [
 function Logo() {
   return (
     <a className="logo" href="#top" aria-label="Wellora home">
-      <span className="logo-mark" aria-hidden="true" />
-      <span>Wellora</span>
+      <span className="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path className="logo-mark-bg" d="M24 4c10.493 0 19 8.507 19 19v2c0 10.493-8.507 19-19 19S5 35.493 5 25v-2C5 12.507 13.507 4 24 4Z" />
+          <path className="logo-leaf" d="M31.971 12.662c-7.364.478-13.08 4.35-14.546 10.81-1.271 5.603 2.778 10.519 8.291 9.196 6.537-1.568 9.523-8.276 9.012-16.494a3.62 3.62 0 0 0-2.757-3.512Z" />
+          <path className="logo-flow" d="M13.25 25.7c2.853 5.873 6.302 8.81 10.347 8.81 4.04 0 7.093-3.235 9.153-9.704" />
+          <path className="logo-cross" d="M24 17.25v8.5M19.75 21.5h8.5" />
+        </svg>
+      </span>
+      <span className="logo-word">Wellora</span>
     </a>
   );
 }
@@ -453,7 +460,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div>
-          <h2>Wellora</h2>
+          <Logo />
           <p>Nutrition. Wellness. Support. All in One Place.</p>
         </div>
         <Button variant="secondary">Request a Demo</Button>
@@ -461,7 +468,7 @@ function Footer() {
       <p className="footer-links">
         Features - How It Works - Who It's For - Request a Demo - Privacy Policy - Terms of Use - Contact Us
       </p>
-      <p className="copyright">© 2026 Wellora. All rights reserved.</p>
+      <p className="copyright">&copy; 2026 Wellora. All rights reserved.</p>
     </footer>
   );
 }
