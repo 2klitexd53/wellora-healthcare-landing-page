@@ -1,11 +1,11 @@
 :root {
-  --page: #c4dbe1;
-  --surface: #ffffff;
-  --ink: #0d2024;
+  --page: #8ab1e5;
+  --surface: #5890d9;
+  --ink: #151616;
   --muted: #4c6468;
   --soft: #e0f3ec;
   --line: #c7e2da;
-  --teal: #057167;
+  --teal: #1c0571;
   --teal-dark: #004140;
   --mint: #b7e8d8;
   --blue: #2153a5;
@@ -60,7 +60,7 @@ main {
   justify-content: center;
   width: 100%;
   height: 88px;
-  background: rgb(255 255 255 / 92%);
+  background: rgba(217, 217, 196, 0.972);
   box-shadow: 0 12px 30px -24px rgb(13 32 36 / 40%);
   backdrop-filter: blur(18px);
 }
